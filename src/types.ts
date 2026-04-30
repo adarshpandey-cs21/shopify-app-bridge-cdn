@@ -73,6 +73,15 @@ export type ShopifyEnvironment = {
 
 export type ExtensionActivation = {
   target: string;
+  handle: string;
+  name: string;
+  status: string;
+  activations: ExtensionThemeActivation[];
+};
+
+export type ExtensionThemeActivation = {
+  themeId: number;
+  target: string;
 };
 
 export type ExtensionInfo = {
