@@ -1,7 +1,8 @@
 import * as helpers from './helpers';
-import * as types from './types';
+
+export * from './types';
+export * from './helpers';
 
 export default {
   ...helpers,
-  ...types,
 };

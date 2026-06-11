@@ -1,3 +1,5 @@
+export type * from './generated';
+
 export type AppBridgeConfig = {
   apiKey: string;
   host: string;

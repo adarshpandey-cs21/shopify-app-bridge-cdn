@@ -1,0 +1,21 @@
+AppBridge:
+  PickedResource:
+    description: A resource returned by the Shopify App Bridge resource picker.
+    type: object
+    required:
+      - id
+      - title
+    properties:
+      id:
+        type: string
+      title:
+        type: string
+  ResourcePickerResult:
+    description: The result returned by the Shopify App Bridge resource picker.
+    type: object
+    properties:
+      selection:
+        type: array
+        description: The selected resources.
+        items:
+          $ref: './types/app-bridge.yaml#/AppBridge/PickedResource'

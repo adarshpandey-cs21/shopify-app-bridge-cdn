@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      type-decoder:
+        specifier: ^2.3.1
+        version: 2.3.1
     devDependencies:
       '@eslint/js':
         specifier: ^9.39.2
@@ -32,6 +36,9 @@ importers:
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
+      type-crafter:
+        specifier: ^0.18.0
+        version: 0.18.0
       typescript-eslint:
         specifier: ^8.55.0
         version: 8.55.0(eslint@9.39.2)(typescript@5.9.3)
@@ -692,6 +699,13 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
+  type-crafter@0.18.0:
+    resolution: {integrity: sha512-I/jyurVZlhXMatiYXKSXVF9DuLcpAaTR6Lp1In0V0fBwmcmBBF+sNuXbr4Vx/pZXidcXfBWbMucztRKJdupMQA==}
+    hasBin: true
+
+  type-decoder@2.3.1:
+    resolution: {integrity: sha512-jUtajc6jOzAvyabhi9o81GU1lq3UsvevMbV3zBv1RDI+PkOe6QrSJS/iVPYVW0yT32t6jJdfDppuTpYdQprC6Q==}
+
   typescript-eslint@8.55.0:
     resolution: {integrity: sha512-HE4wj+r5lmDVS9gdaN0/+iqNvPZwGfnJ5lZuz7s5vLlg9ODw0bIiiETaios9LvFI1U94/VBXGm3CB2Y5cNFMpw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1325,6 +1339,10 @@ snapshots:
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
+
+  type-crafter@0.18.0: {}
+
+  type-decoder@2.3.1: {}
 
   typescript-eslint@8.55.0(eslint@9.39.2)(typescript@5.9.3):
     dependencies:

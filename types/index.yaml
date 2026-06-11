@@ -1,0 +1,7 @@
+info:
+  version: '1.0.0'
+  title: 'Shopify App Bridge CDN Wrapper Types'
+
+groupedTypes:
+  AppBridge:
+    $ref: './types/app-bridge.yaml#/AppBridge'
