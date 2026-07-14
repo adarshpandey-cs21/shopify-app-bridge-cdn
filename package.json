@@ -19,7 +19,9 @@
   "packageManager": "pnpm@10.28.2",
   "scripts": {
     "dev": "tsc --watch",
-    "generate:types": "type-crafter generate typescript-with-decoders ./types/index.yaml ./src/generated",
+    "generate:types": "type-crafter generate typescript-with-decoders ./types/index.yaml ./src/generated && pnpm run lint:fix:generated && pnpm run format:generated",
+    "lint:fix:generated": "eslint './src/generated/**/*.{js,ts}' --fix",
+    "format:generated": "prettier --write ./src/generated/",
     "check": "tsc",
     "build": "rollup --config rollup.config.js",
     "format": "prettier --write .",
