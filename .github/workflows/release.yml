@@ -20,19 +20,19 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           version: 10.28.2
 
@@ -168,14 +168,14 @@ jobs:
           fi
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.version-bump.outputs.new_version }}
           name: Release ${{ steps.version-bump.outputs.new_version }}
           body: |
             ## What's Changed
 
-            **Full Changelog**: https://github.com/sinha-sahil/shopify-app-bridge-cdn-wrapper/commits/release
+            **Full Changelog**: https://github.com/sinha-sahil/shopify-app-bridge-cdn/commits/release
           draft: false
           prerelease: false
         env:

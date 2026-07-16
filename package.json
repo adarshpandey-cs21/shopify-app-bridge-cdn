@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sinha-sahil/shopify-app-bridge-cdn-wrapper.git"
+    "url": "git+https://github.com/sinha-sahil/shopify-app-bridge-cdn.git"
   },
   "keywords": [
     "shopify",
@@ -41,9 +41,9 @@
   "author": "Sahil Sinha",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sinha-sahil/shopify-app-bridge-cdn-wrapper/issues"
+    "url": "https://github.com/sinha-sahil/shopify-app-bridge-cdn/issues"
   },
-  "homepage": "https://github.com/sinha-sahil/shopify-app-bridge-cdn-wrapper#readme",
+  "homepage": "https://github.com/sinha-sahil/shopify-app-bridge-cdn#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@rollup/plugin-typescript": "^12.3.0",
